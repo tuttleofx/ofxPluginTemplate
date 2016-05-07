@@ -49,6 +49,8 @@ if  __name__ == '__main__':
     # print "args.params:", args.params
     # print "args.path:", args.path
     for root, folders, filenames in os.walk(args.path):
+        # do not enter into hidden folders and openfx folder
+        folders[:] = [folder for folder in folders if folder[0] != '.' and folder != 'openfx']
         for filename in filenames:
             filepath = os.path.join(root, filename)
             newFilepath = renameFile(filepath, params)
