@@ -16,7 +16,7 @@ env:
      - PLUGIN_BUILD=${TRAVIS_BUILD_DIR}/build
      - PLUGIN_INSTALL=${TRAVIS_BUILD_DIR}/install
 
-# This results in a 2×2 build matrix.
+# This results in a 2x2 build matrix.
 # Where the variables are: os / compiler
 
 script:
