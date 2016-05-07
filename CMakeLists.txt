@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8) 
 
-project(plugin)
+project(PLUGIN_NAMEPlugin)
 
 # Check that submodule have been initialized and updated
 if(NOT EXISTS ${PROJECT_SOURCE_DIR}/openfx/include)
@@ -12,5 +12,6 @@ endif()
 # Add openfx subdirectory
 add_subdirectory("${PROJECT_SOURCE_DIR}/openfx")
 
-# Build example plugin
-create_ofx_plugin("plugin")
+# Build PLUGIN_NAME plugin
+create_ofx_plugin(PLUGIN_NAMEPlugin src/)
+
