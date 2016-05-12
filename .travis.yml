@@ -27,4 +27,4 @@ script:
 
 after_success:
   - tar -cvzf PLUGIN_NAME.tar.gz $PLUGIN_INSTALL
-  - curl -s -o /dev/null -w "%{http_code}" -X POST -F "file=@PLUGIN_NAME.tar.gz" http://shuttleofxsandbox.no-ip.org/upload/automated/$TOKEN
+  - curl -s -o /dev/null -w "%{http_code}" -X POST -F "file=@PLUGIN_NAME.tar.gz" http://188.166.21.164/upload/automated/$TOKEN
